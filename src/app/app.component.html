@@ -22,22 +22,38 @@
 
     .name-border {
       border: 2px solid white;
-      display: inline-block;
-      padding: 4px 10px;
+      display: block;
       margin-bottom: 8px;
+    }
+
+    #pdf-section {
+      max-width: 70%;
+      margin: 40px auto;
+      background-color: white;
+      padding: 20px;
+
+    }
+
+    #pdf-frame {
+      width: 100%;
+      height: 80vh;
+      border: 2.5px solid teal;
+      box-sizing: border-box;
+      overflow: auto;
+      display: block;
     }
   </style>
 </head>
 
-<body class="w3-dark-grey">
+<body>
 
   <!-- Page Container -->
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <div class="w3-content w3-margin-top" style="max-width:75%;">
     <!-- Grid -->
-    <div class="w3-row-padding" style="display: flex; align-items: stretch; height: 100%; ">
+    <div class="w3-row-padding" style="display: flex; align-items: stretch; height: 100%;">
 
       <!-- Left Column -->
-      <div class="w3-third" style="height: 100%;">
+      <div class="w3-third" style="height: auto;">
         <div class="w3-white w3-text-grey w3-card-4" style="height: 100%;">
           <div class="w3-display-container">
             <img src="assets/images/CV_photo.jpg" alt="Avatar Katelyn Joynt"
@@ -99,6 +115,14 @@
               </div>
             </div>
             <br />
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-user fa-fw w3-margin-right w3-text-teal"></i>About
+                Me</b></p>
+            <p>
+              I am a passionate IT student at North-West University, eager to learn and grow in software development,
+              especially in web technologies like Angular and TypeScript. I enjoy coding, problem-solving, and
+              contributing
+              to real-world projects.
+            </p>
           </div>
         </div>
         <br />
@@ -199,15 +223,18 @@
 
         </div>
 
-
         <!-- End Right Column -->
       </div>
 
       <!-- End Grid -->
     </div>
-
-    <!-- End Page Container -->
   </div>
+
+  <section id="pdf-section" class="w3-container w3-card w3-white w3-margin-top w3-padding-16">
+    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-pdf-o w3-margin-right w3-text-teal"></i>Curriculum Vitae
+    </h2>
+    <iframe id="pdf-frame" src="assets/pdfs/K_Joynt_CV_2025.pdf" title="PDF Document"></iframe>
+  </section>
 
   <footer class="w3-container w3-teal w3-center w3-margin-top">
     <p>Find me on social media!</p>
@@ -225,6 +252,7 @@
     </a>
     <p></p>
   </footer>
+
 </body>
 
 </html>
