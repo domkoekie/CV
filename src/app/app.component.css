@@ -1,7 +1,13 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  background-color: #616161
+  background-color: #616161;
+  height: 100%;
+}
+
+.w3-content {
+  min-height: 100vh;
 }
 
 body {
@@ -67,5 +73,3 @@ body {
   color: teal;
   background-color: white;
 }
-
-
