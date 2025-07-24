@@ -2,18 +2,25 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #616161;
   height: 100%;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  background: linear-gradient(180deg, #616161, #203a43, teal);
+  background-size: 100% 300%;
+  animation: scrollBackground 30s linear infinite;
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
 .w3-content {
   min-height: 100vh;
-}
-
-body {
-  background: #1B1B25;
-  color: #fff;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .separator {
@@ -73,3 +80,6 @@ body {
   color: teal;
   background-color: white;
 }
+
+
+
