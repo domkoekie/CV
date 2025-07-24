@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #616161
+}
+
 body {
   background: #1B1B25;
   color: #fff;
@@ -61,3 +67,5 @@ body {
   color: teal;
   background-color: white;
 }
+
+
